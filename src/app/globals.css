@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white text-gray-900;
+}
+
+body {
+  @apply antialiased;
+}
+
+a {
+  @apply text-primary underline-offset-4;
+}
+
+a:hover {
+  @apply underline;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
