@@ -2,23 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white text-gray-900;
+/* Global resets & typography */
+html, body {
+  @apply bg-white text-neutral-900 antialiased;
 }
 
-body {
-  @apply antialiased;
+/* Layout container utility */
+.container-default {
+  @apply max-w-7xl mx-auto px-4 md:px-8;
 }
 
+/* Section spacing */
+.section-default {
+  @apply py-16 md:py-24;
+}
+
+/* Link styling */
 a {
-  @apply text-primary underline-offset-4;
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
 }
 
-a:hover {
-  @apply underline;
+/* Page title styling */
+.page-title {
+  @apply text-4xl md:text-5xl font-semibold tracking-tight mb-6;
 }
 
-.container {
-  @apply mx-auto max-w-6xl px-4;
+/* Page subtitle styling */
+.page-subtitle {
+  @apply text-lg text-neutral-700 max-w-2xl mb-10;
+}
+
+/* Utility: subtle divider */
+.section-divider {
+  @apply border-b border-neutral-200 my-12;
 }
