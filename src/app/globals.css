@@ -1,38 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind base layers (v4 style) */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-/* Global resets & typography */
-html, body {
-  @apply bg-white text-neutral-900 antialiased;
+/* Global reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* Layout container utility */
-.container-default {
-  @apply max-w-7xl mx-auto px-4 md:px-8;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-/* Section spacing */
-.section-default {
-  @apply py-16 md:py-24;
+/* Body default styles – fără @apply, ca să nu mai urle Tailwind */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff; /* echivalent de bg-white */
+  color: #171717;            /* asemănător cu text-neutral-900 */
 }
 
-/* Link styling */
+/* Linkuri și imagini de bază */
 a {
-  @apply text-blue-600 hover:text-blue-800 transition-colors;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* Page title styling */
-.page-title {
-  @apply text-4xl md:text-5xl font-semibold tracking-tight mb-6;
-}
-
-/* Page subtitle styling */
-.page-subtitle {
-  @apply text-lg text-neutral-700 max-w-2xl mb-10;
-}
-
-/* Utility: subtle divider */
-.section-divider {
-  @apply border-b border-neutral-200 my-12;
+img {
+  max-width: 100%;
+  display: block;
 }
