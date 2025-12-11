@@ -1,7 +1,6 @@
-/* Tailwind base layers (v4 style) */
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Global reset */
 *,
@@ -16,11 +15,11 @@ body {
   padding: 0;
 }
 
-/* Body default styles – fără @apply, ca să nu mai urle Tailwind */
+/* Body default styles – fără @apply */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #ffffff; /* echivalent de bg-white */
-  color: #171717;            /* asemănător cu text-neutral-900 */
+  background-color: #ffffff; /* alb simplu */
+  color: #171717;            /* text închis */
 }
 
 /* Linkuri și imagini de bază */
