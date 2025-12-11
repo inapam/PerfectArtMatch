@@ -1,3 +1,4 @@
+/* Tailwind directives – varianta compatibilă cu versiunea ta */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,3 +33,4 @@ img {
   max-width: 100%;
   display: block;
 }
+
